@@ -1,0 +1,265 @@
+{
+  "products": [
+    {
+      "name": "uièđk moi",
+      "image": "https://picsum.photos/200/200",
+      "category": "danh mục 1",
+      "price": 123456,
+      "desc": "qắedrftgyh",
+      "id": "d40d"
+    },
+    {
+      "name": "Nguyễn Hữu Lộc0610",
+      "image": "https://picsum.photos/seed/picsum/200/200",
+      "category": "danh mục 2",
+      "price": 55,
+      "desc": "qwertyui",
+      "id": "05c0"
+    },
+    {
+      "name": "yue3yuttt",
+      "image": "https://picsum.photos/seed/picsum/200/200",
+      "category": "danh mục 3",
+      "price": 7,
+      "desc": "1234456",
+      "id": "e6df"
+    },
+    {
+      "name": "Nguyễn Hữu Lộc",
+      "image": "https://picsum.photos/seed/picsum/200/200",
+      "category": "danh mục 2",
+      "price": 9393939,
+      "desc": "1234567890",
+      "id": "mEp6QS1"
+    },
+    {
+      "name": "dhỵkdcui",
+      "image": "https://picsum.photos/seed/picsum/200/200",
+      "category": "danh mục 4",
+      "price": 9,
+      "desc": "123456789",
+      "id": "59Z2s7M"
+    }
+  ],
+  "categories": [
+    {
+      "name": "danh mục 1",
+      "id": "838a"
+    },
+    {
+      "name": "danh mục 2",
+      "id": "5af6"
+    },
+    {
+      "name": "danh mục 3",
+      "id": "cvExlQC"
+    },
+    {
+      "name": "danh mục 4",
+      "id": "4Ge_fh-"
+    },
+    {
+      "name": "danh mục 5",
+      "id": "MY9oJKo"
+    }
+  ],
+  "users": [
+    {
+      "id": "40c2",
+      "name": "",
+      "email": "",
+      "password": ""
+    },
+    {
+      "id": "597f",
+      "name": "ẹui",
+      "email": "f",
+      "password": "gfv"
+    },
+    {
+      "id": "7827",
+      "name": "",
+      "email": "f",
+      "password": "gfv"
+    },
+    {
+      "id": "7c70",
+      "name": "",
+      "email": "f",
+      "password": "gfv"
+    },
+    {
+      "id": "0d23",
+      "name": "vyghvyu",
+      "email": "huuloc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "651b",
+      "email": "huuloc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "d174",
+      "name": "ecd",
+      "email": "huuloc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "0140",
+      "name": "ecd",
+      "email": "huuloc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "c0a8",
+      "name": "loc",
+      "email": "d@d.c",
+      "password": "123456"
+    },
+    {
+      "id": "fd03",
+      "name": "loc",
+      "email": "d@d.com",
+      "password": "123456"
+    },
+    {
+      "id": "f63f",
+      "name": "loc",
+      "email": "d@d.c",
+      "password": "123456"
+    },
+    {
+      "id": "9077",
+      "name": "loc",
+      "email": "loc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "361c",
+      "email": "loc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "1e28",
+      "email": "loc@gmail.com",
+      "password": "1234567"
+    },
+    {
+      "id": "9b18",
+      "email": "loc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "076c",
+      "email": "loc@gmail.com",
+      "password": "12345677"
+    },
+    {
+      "id": "cc1c",
+      "email": "loc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "84ca",
+      "email": "loc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "d317",
+      "email": "loc@gmail.com",
+      "password": "7776666"
+    },
+    {
+      "id": "10a8",
+      "name": "yuedfyedhú",
+      "email": "loc1@gmail.com",
+      "password": "1234567"
+    },
+    {
+      "id": "10f6",
+      "email": "loc1@gmail.com",
+      "password": "112dv bv cbcv bcvbc "
+    },
+    {
+      "id": "9e14",
+      "email": "loc@gmail.com",
+      "password": "122323"
+    },
+    {
+      "id": "0def",
+      "email": "loc@gmail.com",
+      "password": "12121212"
+    },
+    {
+      "id": "81e7",
+      "email": "loc@gmail.com",
+      "password": "1234567"
+    },
+    {
+      "id": "9ee6",
+      "email": "loc@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "ab85",
+      "email": "loc@gmail.com",
+      "password": "1234567"
+    },
+    {
+      "id": "127f",
+      "email": "loc@gmail.com",
+      "password": "00000000"
+    },
+    {
+      "id": "47df",
+      "email": "loc@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "b12e",
+      "email": "loc@gmail.com",
+      "password": "9292929292"
+    },
+    {
+      "id": "aa0e",
+      "email": "loc@gmail.com",
+      "password": "87654345678"
+    },
+    {
+      "id": "82e6",
+      "email": "loc@gmail.com",
+      "password": "1223333333"
+    },
+    {
+      "email": "loc2@gmail.com",
+      "password": "$2a$10$v08jtPcOLFDjwZzlrIdtRu3YNf.Zq6uOH0yj/uTJx4o/pAlJt7ulO",
+      "name": "ẻuihrfduh",
+      "id": "OjabGaW"
+    },
+    {
+      "email": "h2@gmail.com",
+      "password": "$2a$10$DBMMoVZVE/CwJQi0Cc7Reemd.sqamS0XqPXHe6ePOA7AyXaARJtXO",
+      "name": "loc",
+      "id": "LyDMpNr"
+    },
+    {
+      "email": "haha@gmail.com",
+      "password": "$2a$10$Zdi.i25vYsiFKnLer3l/T.coCddynbMgHJMRSGAC7d9kwLsicabXe",
+      "name": "haha",
+      "id": "voxzTwd"
+    },
+    {
+      "email": "hihi@gmail.com",
+      "password": "$2a$10$uCn7RyYYfumV3uS6QLJVAujtgRJi9o5jn7SxJ9ACplA5aKBp8vEka",
+      "name": "fjhúdrhừ",
+      "id": "Dcinf66"
+    },
+    {
+      "email": "loc00@gmail.com",
+      "password": "$2a$10$gYQx7zJzRIf/OGJxYouO/.iWtp4y6YW9FUd5J6Sf8c5xe/KYeOnRC",
+      "name": "ùyvù",
+      "id": "BT-wlNv"
+    }
+  ]
+}

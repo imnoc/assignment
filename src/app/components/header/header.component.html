@@ -1,0 +1,59 @@
+<!-- Header Top Bar -->
+<div class="w-full h-12 flex items-center justify-between px-4 py-2 bg-gray-100 sm:px-20 sm:py-5">
+    <p class="text-sm">Need help? Call us: (+98) 0234 456 789</p>
+    <div class="flex items-center text-sm space-x-4">
+        <div class="flex items-center space-x-1">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Our store</span>
+        </div>
+        <div class="flex items-center space-x-1">
+            <i class="fas fa-car"></i>
+            <span>Track your order</span>
+        </div>
+    </div>
+</div>
+
+<!-- Header Main Bar -->
+<div class="w-full h-16 bg-blue-900 flex items-center pl-4 py-2 sm:pl-20 sm:py-5">
+    <img src="assets/image/logo 1.png" alt="Logo" class="h-8 sm:h-10">
+    <form action="" [formGroup]="searchForm" (ngSubmit)="onSearch()" class="flex ml-4 w-full max-w-md rounded-lg relative sm:ml-20 sm:w-96">
+        <input type="text" formControlName="keywords" class="w-full h-8 sm:h-11 rounded-full pl-4 pr-10 sm:pl-10 sm:pr-12">
+        <button type="submit" class="absolute inset-y-0 right-0 px-3 py-1 sm:py-2 bg-yellow-500 text-white rounded-r-full rounded-l-full">
+            Search
+        </button>
+    </form>
+    <div class="flex ml-auto items-center space-x-4 text-xs text-white sm:mr-20 sm:text-base">
+        <div class="flex items-center space-x-1 sm:space-x-2">
+            <i class="fa-solid fa-user"></i>
+            <a href="/signup">Sign in</a>
+        </div>
+        <div class="flex items-center space-x-1 sm:space-x-2">
+            <i class="fa-solid fa-heart"></i>
+            <a href="#">Wishlist</a>
+        </div>
+        <div class="flex items-center space-x-1 sm:space-x-2">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <a routerLink="/cart">Cart</a>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation Bar -->
+<div class="flex flex-wrap items-center justify-between p-4 bg-gray-50 relative sm:p-5">
+    <label class="py-1 bg-yellow-500 px-3 text-white mr-3 sm:py-2 sm:px-7 sm:mr-5">Browse categories</label>
+    <!-- <select name="" id="" class="absolute left-60 bg-yellow-500 text-white"></select> -->
+    <div class="flex flex-wrap items-center space-x-2 sm:space-x-4">
+        <a href="#" class="px-2 sm:px-3">Home</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <a href="/product" class="px-2 sm:px-3">Catalog</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <a href="#" class="px-2 sm:px-3">Blog</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <a href="#" class="px-2 sm:px-3">Pages</a>
+        <i class="fa-solid fa-chevron-down"></i>
+        <a href="#" class="px-2 sm:px-3">About us</a>
+    </div>
+    <span class="absolute left-1/2 transform -translate-x-1/2 lg:left-auto lg:transform-none lg:ml-60 text-xs font-bold text-blue-900 sm:text-base">
+        30 Days Free Return
+    </span>
+</div>

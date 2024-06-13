@@ -1,0 +1,228 @@
+<img src="../../assets/image/Frame 12.png" alt="">
+<div class="justify-center flex text-blue-900 mt-10 ml-6">
+    <div class=" border-gray-300 border-2 mr-28 w-80 flex rounded-lg relative">
+        <i
+            class="fa-regular fa-circle-left text-gray-500 text-2xl absolute -left-3 top-1/2 transform -translate-y-1/2"></i>
+        <img src="../../assets/image/2 1.png" alt="" class="rounded-l-lg">
+        <div class="pl-10">
+            <p class="mt-10 font-bold">Speaker</p>
+            <span class="mt-4">(6 items)</span>
+        </div>
+    </div>
+    <div class=" border-gray-300 border-2 mr-28 w-80 flex rounded-lg relative">
+        <img src="../../assets/image/5 1.png" alt="" class="rounded-l-lg">
+        <div class="pl-10">
+            <p class="mt-10 font-bold">Desktop & laptop</p>
+            <span class="mt-4">(6 items)</span>
+        </div>
+    </div>
+    <div class=" border-gray-300 border-2 mr-10 w-80 flex rounded-lg relative">
+        <i
+            class="fa-regular fa-circle-right text-gray-500 text-2xl absolute -right-3 top-1/2 transform -translate-y-1/2"></i>
+        <img src="../../assets/image/8 1.png" alt="" class="rounded-l-lg">
+        <div class="pl-10">
+            <p class="mt-10 font-bold">Speaker</p>
+            <span class="mt-4">(6 items)</span>
+        </div>
+    </div>
+</div>
+<div class="pl-20 py-10 flex justify-between items-center">
+    <h2 class="text-3xl text-blue-900 font-bold">Popular products</h2>
+    <select [(ngModel)]="selectedCategory" class=" left-96 text-black absolute" (change)="filterProductsByCategory()">
+        <option value="all">Category</option>
+        <option *ngFor="let category of categories" [ngValue]="category.name">{{ category.name }}</option>
+    </select>
+    <div class="flex space-x-4 mr-20 text-blue-900">
+        <button class="border border-gray-300 px-4 py-2 rounded-full hover:border-blue-900">Cameras</button>
+        <button class="border border-gray-300 px-4 py-2 rounded-full hover:border-blue-900">Laptops</button>
+        <button class="border border-gray-300 px-4 py-2 rounded-full hover:border-blue-900">Tablets</button>
+        <button class="border border-gray-300 px-4 py-2 rounded-full hover:border-blue-900">Mouse</button>
+    </div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full relative px-20">
+    <div class="relative border-gray-300 border-2 p-2 h-96 rounded-lg w-full " *ngFor="let product of filteredProducts">
+        <img [src]="product.image" alt="{{ product.name }}">
+        <i class="fa-solid fa-heart text-2xl text-blue-300 absolute top-4 right-4"></i>
+        <div
+            class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
+            <div class="flex items-center">
+                <button class="bg-blue-400 text-white px-10 py-4 rounded-full font-bold">
+                    <a routerLink="/cart">Add to cart</a>
+                </button>
+                <i class="fa-solid fa-cart-shopping text-white px-4 mt-1 ml-28 absolute"></i>
+                <button>
+                    <a [routerLink]="['/detail', product.id]">
+                        <i class="fa-solid fa-eye text-white px-4 py-4 border-2 rounded-full ml-2 bg-blue-400"></i>
+                    </a>
+                </button>
+            </div>
+        </div>
+        <p class="text-blue-900 font-bold">{{ product.name }}</p>
+        <span>{{ product.price | currency }}</span>
+        <br>
+        <span>
+            <i class="fa-regular fa-star hover:text-yellow-500"></i>
+            <i class="fa-regular fa-star hover:text-yellow-500"></i>
+            <i class="fa-regular fa-star hover:text-yellow-500"></i>
+            <i class="fa-regular fa-star hover:text-yellow-500"></i>
+            <i class="fa-regular fa-star hover:text-yellow-500"></i>
+        </span>
+    </div>
+</div>
+<app-banner />
+<div class="flex pl-20">
+    <div class="flex border-2 w-98 rounded-lg h-full pr-40">
+        <img src="../../assets/image/11 1.png" alt="">
+        <div class="mt-16 ">
+            <p class="text-blue-900 font-bold text-2xl">JBL bar 2.1 deep bass</p>
+            <p class="mt-4">$11,70</p>
+            <span mt-4>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+            </span>
+            <div class="flex space-x-4 mt-8">
+                <p class="bg-blue-200 text-2xl rounded-full p-2 px-3 text-yellow-500">57</p>
+                <p class="bg-blue-200 text-2xl rounded-full p-2 px-3 text-yellow-500">11</p>
+                <p class="bg-blue-200 text-2xl rounded-full p-2 px-3 text-yellow-500">33</p>
+                <p class="bg-blue-200 text-2xl rounded-full p-2 px-3 text-yellow-500">59</p>
+            </div>
+            <div class="inline-flex relative">
+                <button class="bg-blue-400 text-black px-10 py-4 rounded-full font-bold mt-10">Add to cart</button>
+                <i class="fa-solid fa-cart-shopping text-black absolute top-full right-4 -mt-8"></i>
+            </div>
+
+            <button>
+                <a routerLink="/detail"> <i
+                        class="fa-solid fa-eye  px-4 py-4 border-2 rounded-full ml-2 bg-blue-400 text-black "></i></a>
+            </button>
+        </div>
+    </div>
+    <div class="ml-16">
+        <div class="flex border-2 rounded-lg mr-2.5 mb-14 ">
+            <img src="../../assets/image/Frame 29 (4).png" alt="" class="w-70 h-40">
+            <div class="mt-4">
+                <p class="text-blue-800 font-bold">Play game</p>
+                <p class="mt-4">$11,70</p>
+                <span class="space-x-2">
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                </span>
+            </div>
+        </div>
+        <div class="flex border-2  pr-36 rounded-lg mr-2.5 ">
+            <img src="../../assets/image/Frame 29 (5).png" alt="" class="w-70 h-40">
+            <div class="mt-4">
+                <p class="text-blue-800 font-bold">Play game</p>
+                <p class="mt-4">$11,70</p>
+                <span class="space-x-2">
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                    <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class=" bg-blue-100 ml-20  mt-10 rounded-lg mr-20">
+    <div class="flex justify-between p-8">
+        <img src="../../assets/image/Frame 55.png" alt="">
+        <img src="../../assets/image/Frame 56.png" alt="">
+        <img src="../../assets/image/Frame 57.png" alt="">
+    </div>
+</div>
+
+<div class="grid grid-cols-3 gap-8 py-10 pl-8">
+    <div class=" border border-gray-300 rounded-lg p-4 ml-12">
+        <div class="flex">
+            <img src="../../assets/image/Frame 61.png" alt="">
+            <p class="mt-5 ml-10 text-blue-900 font-bold">Savannah Nguyen</p>
+        </div>
+        <p class="mt-4 border bg-blue-100 p-4 rounded-lg">
+            Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus
+            tristique
+            aenean at lorem sed scelerisque.
+        </p>
+    </div>
+
+    <div class=" border border-gray-300 rounded-lg p-4 w-full">
+        <div class="flex">
+            <img src="../../assets/image/Frame 61 (1).png" alt="">
+            <p class="mt-5 ml-10 text-blue-900 font-bold">Esther Howard</p>
+        </div>
+        <p class="mt-4 border bg-blue-100 p-4 rounded-lg ">
+            Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus
+            tristique aenean at lorem sed scelerisque.
+        </p>
+    </div>
+
+    <div class=" border border-gray-300 rounded-lg p-4 mr-20">
+        <div class="flex">
+            <img src="../../assets/image/Frame 61 (2).png" alt="">
+            <p class="mt-5 ml-10 text-blue-900 font-bold">Esther Howard</p>
+        </div>
+        <p class="mt-4 border bg-blue-100 p-4 rounded-lg ">
+            Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus
+            tristique
+            aenean at lorem sed scelerisque.
+        </p>
+    </div>
+</div>
+
+
+<div class=" bg-blue-100 ml-20  mt-10 rounded-lg mr-20">
+    <div class="flex justify-between p-8">
+        <img src="../../assets/image/brand-8.png" alt="">
+        <img src="../../assets/image/brand-5.png" alt="">
+        <img src="../../assets/image/brand-6.png" alt="">
+        <img src="../../assets/image/brand-4.png" alt="">
+        <img src="../../assets/image/brand-7.png" alt="">
+    </div>
+</div>
+
+<div class="flex justify-between pl-16 mt-14 text-blue-900 font-bold">
+    <p class="ml-4  text-2xl">Latest news</p>
+    <p class="mr-20 text-1xl">View all</p>
+</div>
+
+<div class=" justify-between flex text-blue-900 mb-20 ">
+    <div class="flex border border-1 p-6 rounded-lg ml-20 mt-8">
+        <img src="../../assets/image/Blog-2_540x490_crop_center 1.png" alt="">
+        <div class="ml-10 ">
+            <p class=" border border-1 rounded-full p-2 w-24">22,oct,2021</p>
+            <p class="text-blue-900 font-bold text-2xl">Who avoids a
+                pain that produces?</p>
+            <p class="mt-4">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper.
+                Phasellus
+                tristique aenean at lorem sed scelerisque.</p>
+            <p class="mt-10">
+                By spacing tech
+            </p>
+        </div>
+    </div>
+    <div class="flex border border-1 p-6 rounded-lg ml-2 mr-20 mt-8">
+        <img src="../../assets/image/Blog-1_540x490_crop_center 1.png" alt="">
+        <div class="ml-10 ">
+            <p class=" border border-1 rounded-full p-2 w-24">22,oct,2021</p>
+            <p class="text-blue-900 font-bold text-2xl">Who avoids a
+                pain that produces?</p>
+            <p class="mt-4">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper.
+                Phasellus
+                tristique aenean at lorem sed scelerisque.</p>
+            <p class="mt-10">
+                By spacing tech
+            </p>
+        </div>
+    </div>
+</div>

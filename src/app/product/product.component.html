@@ -1,0 +1,173 @@
+<div class="flex py-5 pl-20 space-x-4">
+    <p>Home</p>
+    <i class="fa-solid fa-angle-right text-2xl text-gray-500"></i>
+    <p>All category</p>
+    <i class="fa-solid fa-angle-right text-2xl text-gray-500"></i>
+</div>
+
+<div class="flex">
+    <div class="w-2/6 mr-4">
+        <div class="pl-20 mt-14 border-b mb-6">
+            <div class="flex justify-between items-center">
+                <p class="text-blue-900 font-bold">Categories</p>
+                <p class="text-gray-500 ml-44 cursor-pointer" (click)="resetFilter('category')">Reset</p>
+            </div>
+            <div *ngFor="let category of categories" class="flex justify-between items-center mt-4">
+                <div class="flex items-center">
+                    <input type="checkbox" [checked]="isSelectedCategory(category.name)"
+                        (change)="filterProductsByCategory($event,category.name)">
+                    <p class="ml-2">{{ category.name }}</p>
+                </div>
+                <!-- Số sản phẩm trong từng danh mục -->
+                <span>6</span>
+            </div>
+        </div>
+        <div>
+            <p class="pl-20 text-blue-900 font-bold">Availability</p>
+            <div class="pl-20 border-b mb-6">
+                <div class="flex justify-between items-center">
+                    <p>0 selected</p>
+                    <p class="text-gray-500 ml-44 cursor-pointer" (click)="resetFilter()">Reset</p>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="availability" id="in-stock">
+                        <p class="ml-2">In stock</p>
+                    </div>
+                    <span>5</span>
+                </div>
+                <div class="flex justify-between items-center mt-2 border-b">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="availability" id="out-of-stock">
+                        <p class="ml-2">Out of stock</p>
+                    </div>
+                    <span>0</span>
+                </div>
+            </div>
+
+            <p class="pl-20 text-blue-900 font-bold">Product type</p>
+            <div class="pl-20 border-b mb-6">
+                <div class="flex justify-between items-center">
+                    <p>0 selected</p>
+                    <p class="text-gray-500 ml-44 cursor-pointer" (click)="resetFilter()">Reset</p>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="product-type" id="smart-watch">
+                        <p class="ml-2">Smart-watch</p>
+                    </div>
+                    <span>5</span>
+                </div>
+            </div>
+
+            <p class="pl-20 text-blue-900 font-bold">Brand</p>
+            <div class="pl-20 border-b">
+                <div class="flex justify-between items-center">
+                    <p>0 selected</p>
+                    <p class="text-gray-500 ml-44 cursor-pointer" (click)="resetFilter()">Reset</p>
+                </div>
+                <div class="flex justify-between items-center mt-2 mb-6">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="brand" id="brand-smart-watch">
+                        <p class="ml-2">Smart-watch</p>
+                    </div>
+                    <span>5</span>
+                </div>
+            </div>
+
+            <p class="pl-20 text-blue-900 font-bold">Color</p>
+            <div class="pl-20 border-b">
+                <div class="flex justify-between items-center">
+                    <p>0 selected</p>
+                    <p class="text-gray-500 ml-44 cursor-pointer" (click)="resetFilter()">Reset</p>
+                </div>
+                <div class="flex justify-between items-center mt-2 mb-6">
+                    <div class="flex items-center space-x-8">
+                        <p class="rounded-full bg-yellow-300 w-4 h-4"></p>
+                        <p class="rounded-full bg-red-500 w-4 h-4"></p>
+                        <p class="rounded-full bg-blue-500 w-4 h-4"></p>
+                        <p class="rounded-full bg-pink-500 w-4 h-4"></p>
+                        <p class="rounded-full bg-gray-500 w-4 h-4"></p>
+                        <p class="rounded-full bg-violet-500 w-4 h-4"></p>
+                        <p class="rounded-full bg-green-500 w-4 h-4"></p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="pl-20 text-blue-900 font-bold">Size</p>
+            <div class="pl-20 border-b mb-6">
+                <div class="flex justify-between items-center">
+                    <p class="text-blue-900 font-bold">0 selected</p>
+                    <p class="text-gray-500 ml-44 cursor-pointer" (click)="resetFilter()">Reset</p>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="size" id="size-m">
+                        <p class="ml-2">M</p>
+                    </div>
+                    <span>5</span>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="size" id="size-s">
+                        <p class="ml-2">S</p>
+                    </div>
+                    <span>5</span>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="size" id="size-x">
+                        <p class="ml-2">X</p>
+                    </div>
+                    <span>5</span>
+                </div>
+                <div class="flex justify-between items-center mt-2">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="size" id="size-xx">
+                        <p class="ml-2">XX</p>
+                    </div>
+                    <span>5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Product List with Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 w-full relative pr-6">
+        <div class="relative border-gray-300 border-2 p-4 rounded-lg w-full " *ngFor="let product of filteredProducts">
+            <img [src]="product.image" alt="{{ product.name }}">
+            <i class="fa-solid fa-heart text-2xl text-blue-300 absolute top-4 right-2"></i>
+            <div
+                class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-50">
+                <div class="flex items-center">
+                    <button class="bg-blue-400 text-white px-10 py-4 rounded-full font-bold">
+                        <a routerLink="/cart">Add to cart</a>
+                    </button>
+                    <i class="fa-solid fa-cart-shopping text-white px-4 mt-1 ml-28 absolute"></i>
+                    <button>
+                        <a [routerLink]="['/detail', product.id]">
+                            <i class="fa-solid fa-eye text-white px-4 py-4 border-2 rounded-full ml-2 bg-blue-400"></i>
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <p class="text-blue-900 font-bold">{{ product.name }}</p>
+            <span>{{ product.price | currency }}</span>
+            <br>
+            <span>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+                <i class="fa-regular fa-star hover:text-yellow-500"></i>
+            </span>
+        </div>
+    </div>
+
+</div>
+
+<app-banner></app-banner>
